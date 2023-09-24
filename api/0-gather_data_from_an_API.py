@@ -5,10 +5,10 @@ from sys import argv
 
 if __name__ == "__main__":
     if len(argv) > 1:
-    user = argv[1]
-    url = "https://jsonplaceholder.typicode.com/"
-    req = requests.get("{}users/{}".format(url, user))
-    name = req.json().get("name")
+        user = argv[1]
+        url = "https://jsonplaceholder.typicode.com/"
+        req = requests.get("{}users/{}".format(url, user))
+        name = req.json().get("name")
     if name is not None:
             jreq = requests.get(
                 "{}todos?userId={}".format(
