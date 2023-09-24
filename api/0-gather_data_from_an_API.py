@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-'''Python script that, using this REST API, for a given employee ID'''
+"""Python script that, using this REST API, for a given employee ID"""
 import requests
+from sys import argv
 
 if __name__ == "__main__":
     if len(argv) > 1:
